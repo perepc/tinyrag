@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "tinyrag"
+version = "0.1.0"
+description = "Langchain RAG example"
+authors = ["Pere Pasamonte"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+langchain = "^0.2.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
