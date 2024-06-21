@@ -14,6 +14,8 @@ I wrote a fake washing machine user machine for a model called Potter 3000. As i
 
 Once you downloaded the repository, create a new Poetry environment executing ```poetry shell```. Afterwards install dependencies executing ```poetry install```.
 
+Note that you will need to have *Ollama (llama2)* installed locally to create the embeddings.
+
 ## Utilization
 
 First you will need to vectorize the user manual to have langchain using it as context for the LLM. This is done by executing ```python vectorize.py```. This will create a *.chromadb* directory where vectors are stored using a Chroma vector database.
