@@ -1,4 +1,4 @@
-from langchain_core.output_parsers import StrOutputParser
+import os
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.runnables import RunnablePassthrough
 from langchain.chains import retrieval_qa
@@ -6,6 +6,9 @@ from langchain_community.embeddings import OllamaEmbeddings
 from langchain_community.vectorstores import Chroma
 from langchain_groq import ChatGroq
 from argparse import ArgumentParser
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # Constants
 MESSAGE_WITH_CONTEXT = """
@@ -23,7 +26,7 @@ Answer this question as best as you can.
 """
 
 # Define LLM
-llm = ChatGroq(model="llama3-8b-8192",api_key='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')
+llm = ChatGroq(model="llama3-8b-8192",api_key=os.environ.get('GROQ_API_KEY'))
 
 # Get args
 parser = ArgumentParser()
