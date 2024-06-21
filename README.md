@@ -14,7 +14,13 @@ I wrote a fake washing machine user machine for a model called Potter 3000. As i
 
 Once you downloaded the repository, create a new Poetry environment executing ```poetry shell```. Afterwards install dependencies executing ```poetry install```.
 
-Note that you will need to have *Ollama (llama2)* installed locally to create the embeddings.
+Note that you will need to have **Ollama (llama2)** installed locally to create the embeddings.
+
+You will also need to define a **.env** file with your Groq API key like this:
+
+```
+GROQ_API_KEY='<your_api_key>'
+```
 
 ## Utilization
 
