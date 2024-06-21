@@ -82,6 +82,6 @@ Note that there is also a "Rinse and Spin" program mentioned in the context, but
 
 ## Conclusion
 
-As you can see using RAG, LLM response can be much more accurate without neither fine-tuning the LLM model nor train a new one, just letting know to the pre-trained model where the information is.
+As you can see using RAG, LLM models responses can be much more accurate without neither fine-tuning the model nor training a new one; you just need to provide the LLM with the correct information.
 
 It is a VERY simple RAG just to demostrate how useful it can be. For production uses maybe a RAG like this would do the trick but normally you will need a more complex architecture, with more than one vector database, AI agents and more.
